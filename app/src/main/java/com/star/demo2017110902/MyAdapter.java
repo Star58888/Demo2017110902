@@ -45,7 +45,7 @@ public class MyAdapter extends BaseAdapter{
         TextView tv = (TextView) v.findViewById(R.id.textView);
         tv.setText(zooInfo[position].E_Name);
 
-        ImageView img = (ImageView) v.findViewById(R.id.imageView2);
+        ImageView img = (ImageView) v.findViewById(R.id.imageView2);   // 有圖的話 不要 自己寫下載圖的程式 防吃資源
         Picasso.with(context).load(zooInfo[position].E_Pic_URL).into(img);
         return v;
     }
